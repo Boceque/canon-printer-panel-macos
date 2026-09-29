@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Yazıcı Paneli</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header class="ust">
+    <h1 id="yazici-adi" class="ust-baslik">Canon G3010</h1>
+    <div class="durum-satiri">
+      <span id="durum-noktasi" class="nokta" data-seviye="bilinmiyor" aria-hidden="true"></span>
+      <span id="durum-basligi">Durum okunuyor…</span>
+    </div>
+    <p id="durum-ayrintisi" class="kucuk ikincil ayrinti" hidden></p>
+  </header>
+
+  <p id="baglanti-hatasi" class="kutu kutu-hata" role="alert" hidden></p>
+
+  <section id="sabit-bolumu" class="bolum" aria-labelledby="sabit-basligi" hidden>
+    <h2 id="sabit-basligi" class="bolum-basligi">Sabit ayar</h2>
+
+    <div class="sabit-ozet">
+      <span id="kilit-simgesi" class="kilit" aria-hidden="true" hidden>
+        <svg viewBox="0 0 16 16" width="14" height="14" focusable="false">
+          <rect x="3" y="7" width="10" height="7.5" rx="1.6" fill="currentColor"/>
+          <path d="M5.25 7V5.1a2.75 2.75 0 0 1 5.5 0V7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </span>
+      <p id="sabit-ozeti"></p>
+    </div>
+    <div id="rozetler" class="rozetler" hidden></div>
+    <p id="gorevli-uyarisi" class="kucuk uyari-metni" hidden>Arka plan görevlisi çalışmıyor</p>
+    <p id="uzak-islem" class="kucuk ikincil uzak-islem" role="status" hidden></p>
+
+    <ul id="hazir-ayarlar" class="liste" aria-label="Hazır ayarlar"></ul>
+
+    <label class="anahtar-satiri" for="kesin-mod">
+      <span class="anahtar-metni">
+        <span>Kesin mod <span id="kesin-bekleme" class="bekleme" hidden>…</span></span>
+        <span id="kesin-ipucu" class="kucuk ikincil"></span>
+      </span>
+      <input id="kesin-mod" class="anahtar" type="checkbox" role="switch">
+    </label>
+
+    <div id="kaldir-alani" class="kaldir-alani"></div>
+  </section>
+
+  <section id="chrome-bolumu" class="bolum" aria-labelledby="chrome-basligi" hidden>
+    <h2 id="chrome-basligi" class="bolum-basligi">Chrome'da</h2>
+    <p id="chrome-notu" class="kutu kucuk ikincil"></p>
+  </section>
+
+  <p id="islem-hatasi" class="kutu kutu-hata kucuk" role="alert" hidden></p>
+
+  <footer id="alt" class="alt" hidden>
+    <button id="paneli-ac" class="dugme" type="button">Yazıcı Paneli'ni aç</button>
+    <span id="bekleyen" class="kucuk ikincil"></span>
+  </footer>
+
+  <script src="panel.js"></script>
+</body>
+</html>

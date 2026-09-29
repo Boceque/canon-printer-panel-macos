@@ -1,0 +1,9 @@
+# Derleme çıktısı
+.build/
+*.zip
+
+# Chrome eklentisinin ÖZEL anahtarı — asla paylaşılmaz (genel anahtar manifest.json'da)
+Destek/eklenti-anahtar/ozel.pem
+
+.DS_Store
+.swiftpm/

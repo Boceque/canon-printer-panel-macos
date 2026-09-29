@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Yazıcı Paneli",
+  "description": "Canon G3010 için Chrome yazdırma hedefi: Yazıcı Paneli uygulamasındaki sabit baskı ayarlarıyla basar.",
+  "version": "1.0.0",
+  "minimum_chrome_version": "120",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm1RGpxRXDMpSr3UzJhAh3UDzX//BaRGSOzp//kG9MU6C8jyW3qk8+bTYT+WEm9JUre0Scw0nh/aFf5/UuqHJlXgsbCztvWt2CCgop2JOmjCQzjXImC0iFdcIQrwyUoN+/aSdCNWgHu3WICbCcVAxPrnmXTGEGLZOrx6siT7P9p/R9cK8P3dOei6tQKgcPYz/th3er5aKqHXERACr3w6MlQB07BkBwHNDp1tCWKSDRKMBvy5RVaWmv2yPPmlSWocl0eqFNjQDjZ0fzjui38AhLuMRslsVnjff+6d51vvSDQayMW3EFCnd0ABLJwG+H0ytT1G3C4hI6/udN0oJ3dZJJwIDAQAB",
+  "permissions": [
+    "printerProvider",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "arkaplan.js"
+  },
+  "action": {
+    "default_title": "Yazıcı Paneli",
+    "default_popup": "panel.html",
+    "default_icon": {
+      "16": "simgeler/simge-16.png",
+      "32": "simgeler/simge-32.png",
+      "48": "simgeler/simge-48.png",
+      "128": "simgeler/simge-128.png"
+    }
+  },
+  "icons": {
+    "16": "simgeler/simge-16.png",
+    "32": "simgeler/simge-32.png",
+    "48": "simgeler/simge-48.png",
+    "128": "simgeler/simge-128.png"
+  }
+}
