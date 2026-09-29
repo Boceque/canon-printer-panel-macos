@@ -64,6 +64,16 @@ onceki_isaret=$(cat "$ISARET" 2>/dev/null || true)
 "$HEDEF/Contents/MacOS/YaziciPaneli" --chrome-kur || true
 
 echo "Kuruldu: $HEDEF"
+
+# Uygulama (arayüz; görevli ve Chrome köprüsü değil) açıksa yeni sürümle yeniden başlat:
+# altından değişen eski süreç yazıcıya ulaşamayabiliyor.
+if pgrep -fx "$HEDEF/Contents/MacOS/YaziciPaneli" >/dev/null 2>&1; then
+    osascript -e 'tell application id "com.caglar.yazicipaneli" to quit' >/dev/null 2>&1 || true
+    for _ in {1..10}; do pgrep -fx "$HEDEF/Contents/MacOS/YaziciPaneli" >/dev/null 2>&1 || break; sleep 0.5; done
+    open "$HEDEF"
+    echo "Açık olan uygulama yeni sürümle yeniden başlatıldı."
+fi
+
 if [[ "$(cat "$ISARET" 2>/dev/null || true)" != "$onceki_isaret" ]]; then
     echo "Chrome eklentisi güncellendi: chrome://extensions › Yazıcı Paneli › ↻ (Yeniden yükle) düğmesine basın."
 fi
