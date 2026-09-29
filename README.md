@@ -1,6 +1,6 @@
 # Canon Printer Panel for Mac (Canon PIXMA G3010)
 
-*Yazıcı Paneli* — a free Canon printer utility for macOS.
+*Yazıcı Paneli* — a free, open-source (MIT) Canon printer utility for macOS.
 
 🇹🇷 [Türkçe](README.tr.md)
 
@@ -125,3 +125,7 @@ Besides Chrome, Chrome Beta/Canary, Chromium, Brave and Edge are supported.
 - For deep cleaning and system cleaning, it was verified that the printer accepts the command; they were not run to completion to avoid wasting ink.
 - Even when a cleaning is canceled, some ink may be used until the printer stops (a few seconds).
 - The app is not signed with an Apple Developer ID (see Installation › step 3).
+
+## License
+
+[MIT](LICENSE) — free to use, modify and share. Provided as is, without warranty: maintenance operations use ink, use them at your own risk.

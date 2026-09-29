@@ -122,3 +122,7 @@ Chrome dışında Chrome Beta/Canary, Chromium, Brave ve Edge de desteklenir.
 - Yoğun temizlik ve sistem temizliği için yazıcının komutu kabul ettiği doğrulandı. Mürekkep harcamamak için sonuna kadar çalıştırılmadı.
 - Temizlik iptal edilse bile yazıcı durana kadar (birkaç saniye) biraz mürekkep harcanabilir.
 - Uygulama Apple'a kayıtlı bir geliştirici imzası taşımaz (bkz. Kurulum › 3. adım).
+
+## Lisans
+
+[MIT](LICENSE) — serbestçe kullanılabilir, değiştirilebilir, paylaşılabilir. Olduğu gibi, garantisiz verilir: bakım işlemleri mürekkep harcar, kullanım sorumluluğu size aittir.
